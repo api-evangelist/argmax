@@ -1,0 +1,45 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/argmaxinc + https://www.npmjs.com/package/@argmaxinc/local-server
+packages:
+- language: javascript
+  registry: npm
+  name: "@argmaxinc/local-server"
+  url: https://www.npmjs.com/package/@argmaxinc/local-server
+  install: npm install @argmaxinc/local-server
+  version: 0.0.5
+  repository: https://github.com/argmaxinc/argmax-node-local-server
+  description: Library for managing the Argmax Local Server on macOS (Deepgram-compatible transcription).
+  official: true
+- language: swift
+  registry: swift-package-manager
+  name: argmax-oss-swift
+  url: https://github.com/argmaxinc/argmax-oss-swift
+  install: "add https://github.com/argmaxinc/argmax-oss-swift via Swift Package Manager"
+  description: On-device Speech AI for Apple Silicon (WhisperKit / SpeakerKit open-source core).
+  license: MIT
+  official: true
+- language: swift
+  registry: swift-package-manager
+  name: swift-transformers
+  url: https://github.com/argmaxinc/swift-transformers
+  install: "add https://github.com/argmaxinc/swift-transformers via Swift Package Manager"
+  description: Swift package implementing a transformers-like API in Swift (Argmax fork).
+  license: Apache-2.0
+  official: true
+- language: kotlin
+  registry: github
+  name: argmax-sdk-kotlin
+  url: https://github.com/argmaxinc/argmax-sdk-kotlin-playground
+  description: >-
+    Argmax SDK for Android (Kotlin). Distributed to Pro customers; the public
+    playground repo demonstrates integration. Not published to Maven Central at
+    time of capture.
+  official: true
+- language: python
+  registry: github
+  name: whisperkittools
+  url: https://github.com/argmaxinc/whisperkittools
+  description: Python tools for WhisperKit — model conversion, optimization, and evaluation (not published to PyPI).
+  license: MIT
+  official: true

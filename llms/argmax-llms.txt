@@ -1,0 +1,36 @@
+# Argmax
+
+> Argmax, Inc. builds on-device inference infrastructure that runs foundation models locally on user devices for privacy, real-time performance, and predictable per-device costs. Products include WhisperKit (speech-to-text), SpeakerKit (speaker recognition/diarization), DiffusionKit (image generation on Apple Silicon), and TTSKit, plus the Argmax Local Server for macOS — a Deepgram Speech-to-Text (Live) API-compatible local transcription server. Backed by General Catalyst.
+
+## APIs
+
+- [Argmax Local Server guide](https://app.argmaxinc.com/docs/guides/using-local-server): Deepgram-compatible local transcription server (WebSocket, default ws://localhost:50060), driven by the @argmaxinc/local-server Node client.
+
+## Docs
+
+- [Developer Portal](https://app.argmaxinc.com): Argmax Console, billing, and documentation.
+- [Documentation](https://app.argmaxinc.com/docs): Guides for the Pro SDKs and Local Server.
+- [Getting Started / Upgrading to Pro SDK](https://app.argmaxinc.com/docs/guides/upgrading-to-pro-sdk): Installing and enabling Pro features.
+- [Models](https://app.argmaxinc.com/docs/models): Available on-device models marketplace.
+- [Counting Active Licenses](https://app.argmaxinc.com/docs/guides/counting-active-licenses): Device-based billing and licenseId model.
+- [Changelog](https://app.argmaxinc.com/docs/changelog): Release notes.
+
+## SDKs & Packages
+
+- [@argmaxinc/local-server (npm)](https://www.npmjs.com/package/@argmaxinc/local-server): Official Node client for the Local Server.
+- [argmax-oss-swift (GitHub)](https://github.com/argmaxinc/argmax-oss-swift): On-device Speech AI for Apple Silicon (Swift Package Manager).
+- [swift-transformers (GitHub)](https://github.com/argmaxinc/swift-transformers): Transformers-like API in Swift.
+- [whisperkittools (GitHub)](https://github.com/argmaxinc/whisperkittools): Python model conversion/optimization/evaluation tools.
+- [GitHub organization](https://github.com/argmaxinc): All open-source repositories.
+
+## Authentication
+
+- Argmax API key (ax_ prefix) issued from the Argmax Console; supplied at SDK/Local Server initialization. Device-based licensing keyed on licenseId.
+
+## Company
+
+- [Pricing](https://www.argmaxinc.com/pricing): Basic (free OSS), Pro ($1.00–$1.33/device/month), Enterprise (custom).
+- [Blog](https://www.argmaxinc.com/blog)
+- [Status](https://status.argmaxinc.com)
+- [Terms of Service](https://www.argmaxinc.com/terms-of-service)
+- [Privacy Policy](https://www.argmaxinc.com/privacy)

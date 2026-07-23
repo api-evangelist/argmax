@@ -1,0 +1,45 @@
+generated: '2026-07-18'
+method: searched
+source: https://app.argmaxinc.com/docs/guides/using-local-server
+docs: https://app.argmaxinc.com/docs
+summary: >-
+  Cross-cutting conventions for the Argmax Local Server, a macOS transcription
+  server that is API-compatible with the Deepgram Speech-to-Text (Live) API.
+  Because the interface mirrors Deepgram Live, integrators can reuse existing
+  Deepgram Live clients by repointing them at the local WebSocket endpoint.
+authentication:
+  style: api-key
+  key_format: "ax_***"
+  placement: supplied at server initialization (not a per-request header)
+  ref: authentication/argmax-authentication.yml
+transport:
+  protocol: websocket
+  default_endpoint: ws://localhost:50060
+  compatibility: Deepgram Speech-to-Text (Live) API
+  streaming: true
+  multiplexing: >-
+    Each audio stream requires its own socket; open one WebSocket per audio
+    channel.
+node_client:
+  package: "@argmaxinc/local-server"
+  lifecycle_methods:
+  - server.startProcess()   # launch the local server
+  - server.init()           # initialize with model selection
+  - server.waitForReady()   # confirm readiness
+  - server.status()         # retrieve current status
+  - server.createTranscriber()  # establish a transcription stream
+idempotency:
+  supported: false
+  notes: >-
+    Streaming transcription is a stateful real-time interface; no
+    idempotency-key contract is documented.
+pagination:
+  supported: false
+  notes: Streaming interface; no paginated collection endpoints documented.
+versioning:
+  scheme: docs-changelog
+  changelog: https://app.argmaxinc.com/docs/changelog
+error_handling:
+  notes: >-
+    Errors follow the Deepgram Live message/close conventions the compatible
+    client surfaces; Argmax does not publish a distinct problem+json catalog.
