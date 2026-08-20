@@ -41,6 +41,20 @@ tags:
 - Company
 - Enterprise
 - Artificial Intelligence
+- Machine-Learning
+- On-Device Inference
+- Speech Recognition
+- Speech-to-Text
+- Transcription
+- Speaker Diarization
+- Image-Generation
+- SDK
+- Apple Silicon
+- Edge AI
+tags_raw:
+- Company
+- Enterprise
+- Artificial Intelligence
 - Machine Learning
 - On-Device Inference
 - Speech Recognition
@@ -62,6 +76,12 @@ apis:
   humanURL: https://app.argmaxinc.com/docs/guides/using-local-server
   baseURL: ws://localhost:50060
   tags:
+  - Speech-to-Text
+  - Transcription
+  - Streaming
+  - WebSocket
+  - Deepgram-Compatible
+  tags_raw:
   - Speech to Text
   - Transcription
   - Streaming
