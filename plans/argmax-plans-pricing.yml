@@ -1,0 +1,55 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://www.argmaxinc.com/pricing
+sources:
+- https://www.argmaxinc.com/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: developer-api
+pricing_basis: usage-other
+delivery:
+  delivery: open-core
+  method: page
+  read: '2026-10-07'
+  evidence: Open-source (MIT License)
+  free_edition: Basic Plan
+  managed_tier: Pro Plan
+  open_source_license: MIT License
+published: true
+note: Per-active-device monthly licensing; 14-day trial initiated with a $14 payment granting 30 device
+  licenses. Open-source Basic tier under MIT beside paid Pro/Enterprise tiers.
+plan_count: 4
+currency: USD
+plans:
+- name: Basic Plan
+  price_text: Free
+  period: none
+  included_quota: Open-source (MIT License), Public Discord support, WhisperKit, SpeakerKit, TTSKit
+- name: Pro Plan (monthly)
+  price_text: $1.33 /device/month
+  price: 1.33
+  currency: USD
+  period: month
+  unit: device
+  included_quota: 1,000 monthly licenses minimum; everything in Basic Plan, WhisperKit Pro, SpeakerKit
+    Pro, Private Slack support, Standard terms
+  overage: The additional licenses are charged at the same unit price in monthly arrears, rounded down
+    to the nearest multiple of 1,000 units.
+- name: Pro Plan (yearly)
+  price_text: $1.00 /device/month
+  price: 1.0
+  currency: USD
+  period: month
+  unit: device
+  included_quota: 10,000 monthly licenses minimum
+- name: Enterprise Plan
+  price_text: Custom
+  period: none
+  included_quota: Everything in Pro Plan, implementation support, custom model support, priority Slack
+    support, custom terms, significant volume discounts
+rate_limit_statements:
+- No rate limits. No usage limits. No concurrency limits.
+- There is no rate limit. There is no concurrency limit. There is no usage volume limit.
