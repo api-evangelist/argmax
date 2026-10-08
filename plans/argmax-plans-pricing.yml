@@ -53,3 +53,41 @@ plans:
 rate_limit_statements:
 - No rate limits. No usage limits. No concurrency limits.
 - There is no rate limit. There is no concurrency limit. There is no usage volume limit.
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - hybrid
+  units:
+  - object
+  plans:
+  - name: Basic Plan
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
+  - name: Pro Plan (monthly)
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - object
+    periods:
+    - month
+  - name: Pro Plan (yearly)
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - object
+    periods:
+    - month
+  - name: Enterprise Plan
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
